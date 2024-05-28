@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #121214;
+    --text-color: #F8F8FC;
+    --primary-color: #0EBD35;
+    --btns-color: #E1E1E6;
+    font-size: clamp(80%, 2vw, 100%);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+html.light {
+    --bg-color:  #F8F8FC ;
+    --text-color: #121214;
+    --btns-color: #242424;
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon{
+    display: none;
+}
+
+.running .ph-play-circle, 
+html:not(.running) .ph-pause-circle {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#toggle-mode {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    line-height: 0;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#toggle-mode:hover {
+    color: var(--primary-color);
+}
+
+#page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+    pad: 1rem;
+}
+
+#time {
+    font-size: 7.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    background: var(--btns-color);
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+button{
+    color: var(--primary-color);
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.secondary {
+    color: var(--bg-color);
+    transition: 0.3s;
+}
+
+.secondary:hover {
+    color: var(--primary-color);
+}
+
+#sounds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#sounds button {
+    padding: 2rem 2rem;
+    border-radius: 1.5rem;
+    color: var(--bg-color);
+    background: var(--btns-color);
+    transition: 0.3s;
+}
+
+#sounds button:hover {
+    background: var(--primary-color);
+}
+
+#sounds .music-on {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+@media (max-width: 835px) {
+    #page {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 320px) {
+    :root {
+        font-size: 60%;
+    }
+}
