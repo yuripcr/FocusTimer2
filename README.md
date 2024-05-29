@@ -7,8 +7,6 @@ Temporazidor <br/>
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>
 
-<br>
-
 <p align="center">
   <img src=".github/Cover.jpg" width="100%">
 </p>
