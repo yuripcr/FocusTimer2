@@ -5,9 +5,7 @@ Temporazidor <br/>
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
-</p>
+  <a href="#-tecnologias">Tecnologias</a>
 
 <br>
 
