@@ -3,10 +3,6 @@
 <p align="center">
 Temporazidor <br/>
 </p>
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>
-
 <p align="center">
   <img src=".github/Cover.jpg" width="100%">
 </p>
